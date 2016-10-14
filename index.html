@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Clojure</title>
+
+    <style>
+      html, body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+      .small-image img {
+      width: 150px;
+      vertical-align: middle
+
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+      class: center, middle
+      background-image: url(clj-logo.png)
+
+      # Clojure
+
+      --
+
+      #### the functional
+      #### the immutable
+      #### the statically typed
+
+      --
+
+      .small-image[
+      #### and ![Travis](travis-logo.png)]
+
+      ---
+
+      ## Why am I talking about this?
+
+      ---
+      background-image: url(clojure-bridge.png)
+
+      ---
+
+      layout: true
+
+      ## The Clojure Language
+
+      ---
+
+      ---
+
+      ### It's a Lisp
+
+      --
+
+      ### --> Lots of ((((()))))
+
+      ---
+
+      ### Two implementations
+
+      --
+
+      .center[.small-image[ ![CLJ](clj-logo.png) ![CLJS](cljs-logo.png)]]
+
+      ---
+
+      ### Syntax
+
+      ```clojure
+      (defn add                        ; name
+        [x y]                          ; arguments
+        "Adds together two numbers"    ; documentation
+        (+ x y))
+      ```
+
+      --
+
+      ```clojure
+      (add 1 2)         ;=> 3
+      (add (add 1 2) 4) ;=> 7
+      ```
+      ---
+
+      ### Values
+
+      String, Booleans and nil, Keywords, Numbers (Integers, Decimals, Ratios)
+
+      ---
+
+      ### Data Structures
+
+      --
+
+      #### Vectors
+
+      ```clojure
+      ["a" 3 "foo" 6]
+      (nth [5 6 7] 1) ; 6
+      ```
+
+      ---
+      ### Data Structures
+
+      --
+
+      #### Maps
+
+      ```clojure
+      {:foo "Lisa" :bar "P"}
+      (get {:ci "Travis" :lang "clj"} :lang ) ; "clj"
+      ```
+      ---
+
+      layout: false
+      ## Language Concepts
+
+      ---
+
+      ## The functional
+
+      - Higher-order functions
+
+      take functions as arguments or return them
+
+      enable currying
+
+      - Pure functions
+
+      no sideeffects
+
+
+      Compared to Ruby/ JS
+
+      ---
+
+      ## The immutable
+
+      - object whose state can not be changed
+
+      How do you modify? You create
+
+      what does it mean?
+
+      Compared to Ruby/JS
+
+      ---
+
+      ## The statically typed
+
+      what does it mean?
+
+      Compared to Ruby/JS
+
+      ---
+
+      ## How did it change my programming?
+
+      - what am I actually passing around? What values do I expect? Should I check for that?
+      - where do I change value? why? is it necessary?
+      - How pure are my functions? do they have side effects? Can I write it better?
+
+      --
+
+      I think it improved my overall coding
+
+      ---
+
+      ## Bonus
+
+      Clojure at Travis
+
+      How does a project look like?
+
+      Build toold?
+
+      Leiningen vs boot
+
+      what do I deploy?
+
+      ---
+
+      Thanks!
+
+    </textarea>
+    <script src="remark.min.js"></script>
+    <script>var slideshow = remark.create();</script>
+  </body>
+</html>
