@@ -34,7 +34,7 @@
 
       ### the functional
       ### the immutable
-      ### the statically typed
+      ### the dynamically typed
 
       --
 
@@ -72,7 +72,7 @@
 
       ---
 
-      ### Two implementations
+      ### Two versions
 
       --
 
@@ -155,16 +155,15 @@
 
       Data structures, once created, can't be changed.
 
-      Instead, new ones are created with a pointer to the older structure and the applied change.
+      Instead, new ones are created by applying a change to the old one.
 
       ---
 
-      ## The statically typed
+      ## The dynamically typed
 
       Clojure takes care of figuring out what type of data you're dealing with.
-      You don't have to declare types and you don't even notice that it's happening.
 
-      But you're safe from errors.
+      The Compiler will tell you if there are inconsistencies.
 
       ---
 
@@ -221,7 +220,7 @@
 
       ---
 
-      ### Build an deploy
+      ### Build and deploy
 
       ```bash
       $ lein uberjar
